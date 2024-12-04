@@ -1,7 +1,7 @@
-#ifndef EMP_AG2PC_2PC_H__
-#define EMP_AG2PC_2PC_H__
+#ifndef EMP_AG2PC_PV2PC_H__
+#define EMP_AG2PC_PV2PC_H__
 #include <emp-tool/emp-tool.h>
-#include "../emp-ag2pc/fpre.h"
+#include "emp-ag2pc/fpre.h"
 
 namespace emp {
 template<typename T>

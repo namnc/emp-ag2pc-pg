@@ -1,4 +1,4 @@
-cmake_minimum_required (VERSION 2.8.11)
+cmake_minimum_required (VERSION 3.22)
 project (emp-ag2pc)
 set(NAME "emp-ag2pc")
 
@@ -13,4 +13,5 @@ install(FILES cmake/emp-ag2pc-config.cmake DESTINATION cmake/)
 install(DIRECTORY emp-ag2pc DESTINATION include)
 
 ENABLE_TESTING()
+ADD_SUBDIRECTORY(voleith-lib)
 ADD_SUBDIRECTORY(test)
