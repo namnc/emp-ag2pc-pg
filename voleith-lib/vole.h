@@ -8,6 +8,10 @@
 #include "vc.h"
 #include <stdbool.h>
 
+#ifdef __cplusplus
+extern "C" {
+#endif
+
 FAEST_BEGIN_C_DECL
 
 // k_b is at most 12, so chalout needs to point to an array of at most 12 bytes
@@ -22,11 +26,13 @@ void vole_reconstruct(const uint8_t* iv, const uint8_t* chal, const uint8_t* con
                       const uint8_t* const* com_j, uint8_t* hcom, uint8_t** q, unsigned int ellhat,
                       const faest_paramset_t* params);
 
-#if defined(FAEST_TESTS)
 void ConvertToVole(const uint8_t* iv, const uint8_t* sd, bool sd0_bot, unsigned int lambda,
                    unsigned int depth, unsigned int outLenBytes, uint8_t* u, uint8_t* v);
-#endif
 
 FAEST_END_C_DECL
+
+#ifdef __cplusplus
+}
+#endif
 
 #endif
